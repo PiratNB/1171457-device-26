@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Алексей Таиров](https://up.htmlacademy.ru/htmlcss/26/user/1171457).
-* Наставник: `Неизвестно`.
+* Наставник: `Денис Власов`(https://htmlacademy.ru/profile/amaringo).
 
 ---
 
