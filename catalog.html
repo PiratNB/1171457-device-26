@@ -18,7 +18,10 @@
            <input class="main-nav__search-input" placeholder="Поиск по сайту">
            <button class="main-nav__search-btn" type="submit">Найти</button>
          </li>
-         <li class="main-nav__user-item"><a class="main-nav__user-link" href="dfssdgsdfdfsdf">Войти</a></li>
+         <li class="main-nav__user-item">
+          <a class="main-nav__user-link" href="">Валентин Петухов</a>
+          <a class="main-nav__user-link" href="">Выйти</a>
+         </li>
          <li class="main-nav__user-item"><a class="main-nav__user-item" href="dfsdfsdf">Сравнить</a></li>
          <li class="main-nav__user-item"><a class="main-nav__user-item" href="dfsdfsdfsdfgsd">Корзина</a></li>
       </ul>
@@ -38,14 +41,17 @@
      <h1>Интернет-магазин электронных товаров Device</h1>
      <section>
       <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог товаров</a></li>
+        <li class="breadcrumbs-link"><a href="index.html">Главная</a></li>
+        <li class="breadcrumbs-link"><a href="catalog.html">Каталог товаров</a></li>
         <li class="breadcrumbs-current">Моноподы для селфи</li>
       </ul>
      </section>
      <section>
        <h2 class="visually-hidden">Фильтр товаров</h2>
-       <h3>Цвет</h3>
+       <legend>Стоимость</legend>
+       <!--Сделать ползунок-->
+
+       <legend>Цвет</legend><!--Пока без классов-->
        <ul>
          <li>Черный</li>
          <li>Белый</li>
@@ -53,14 +59,34 @@
          <li>Красный</li>
          <li>Розовый</li>
        </ul>
-       <h3>Bluetooth</h3>
+       <legend>Bluetooth</legend>
        <ul>
          <li>Есть</li>
          <li>Нет</li>
        </ul>
-       <p><button type="button">Показать</button></p>
+       <button class="btn" type="submit">Показать</button>
      </section>
 
+     <section class="goods__sort">
+       <h3>Сортировка:</h3>
+       <ul class="goods__sort-list">
+         <li class="goods__sort-item"><a href="">По цене</a></li>
+         <li class="goods__sort-item"><a href="">По типу</a></li>
+         <li class="goods__sort-item"><a href="">По популярности</a></li>
+       </ul>
+       <ul class="goods__sort-updown">
+         <li class="goods__sort-up">
+           <a class="goods__sort-up-link" href="">
+             <img src="img/sort-up.svg" alt="По возрастанию" width="11" height="10">
+           </a>
+         </li>
+         <li class="goods__sort-down  goods__sort-down--active">
+           <a class="goods__sort-down-link" href="#">
+             <img src="img/sort-down.svg" alt="По убыванию" width="11" height="10">
+           </a>
+         </li>
+       </ul>
+     </section>
 
      <section>
        <h2 class="visually-hidden">Список селфи-палок</h2>
@@ -114,9 +140,11 @@
          </li>
        </ul>
        <ul class="pagination-list">
+         <li><a class="pagination__control" href="#">Назад</a></li>
          <li class="pagination-item pagination-item-current"><a>1</a></li>
          <li class="pagination-item"><a href="#">2</a></li>
          <li class="pagination-item"><a href="#">3</a></li>
+         <li><a class="pagination__control" href="#">Вперед</a></li>
        </ul>
     </section>
 
