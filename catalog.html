@@ -33,14 +33,14 @@
    <main>
      <h1>Интернет-магазин электронных товаров Device</h1>
      <section>
-      <h2>Моноподы для селфи</h2>
       <ul>
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог товаров</a></li>
-        <li><a href="">Моноподы для селфи</a></li>
+        <li class="breadcrumbs-current">Моноподы для селфи</li>
       </ul>
      </section>
      <section>
+       <h2 class="visually-hidden">Фильтр товаров</h2>
        <h3>Цвет</h3>
        <ul>
          <li>Черный</li>
@@ -56,13 +56,64 @@
        </ul>
        <p><button type="button">Показать</button></p>
      </section>
+
+
      <section>
-       <ul>
-         <li><a href="lsp.html"><img src="lsp.jpg">Любительская селфи-палка</a> 500 руб.</li>
-         <li><a href="psp.html"><img src="psp.jpg">Профессиональная селфи-палка</a> 1500 руб.</li>
-         <li><a href="nsp.html"><img src="nsp.jpg">Непотопляемая селфи-палка</a> 2500 руб.</li>
-         <li><a href="spsm.html"><img src="spsm.jpg">Cелфи-палка "Следуй за мной"</a> 4900 руб.</li>
-        </ul>
+       <h2 class="visually-hidden">Список селфи-палок</h2>
+       <ul class="catalog-list">
+         <li class="catalog-item">
+           <h3>
+             <a href="catalog-item.html">Любительская селфи-палка</a>
+           </h3>
+           <p class="catalog-item-image">
+            <a href="catalog-item.html">
+             <img src="img/lsp.jpg" width="220" height="160" alt="Любительская селфи-палка">
+            </a>
+           </p>
+           <b class="price-item">500 руб.</b>
+         </li>
+
+         <li class="catalog-item">
+           <h3>
+             <a href="catalog-item.html">Профессиональная селфи-палка</a>
+           </h3>
+           <p class="catalog-item-image">
+            <a href="catalog-item.html">
+             <img src="img/psp.jpg" width="220" height="160" alt="Профессиональная селфи-палка">
+            </a>
+           </p>
+           <b class="price-item">1500 руб.</b>
+         </li>
+
+         <li class="catalog-item">
+           <h3>
+             <a href="catalog-item.html">Непотопляемая селфи-палка</a>
+           </h3>
+           <p class="catalog-item-image">
+            <a href="catalog-item.html">
+             <img src="img/nsp.jpg" width="220" height="160" alt="Непотопляемая селфи-палка">
+            </a>
+           </p>
+           <b class="price-item">2500 руб.</b>
+         </li>
+
+         <li class="catalog-item">
+           <h3>
+             <a href="catalog-item.html">Cелфи-палка "Следуй за мной"</a>
+           </h3>
+           <p class="catalog-item-image">
+            <a href="catalog-item.html">
+             <img src="img/spsm.jpg" width="220" height="160" alt="Cелфи-палка "Следуй за мной"">
+            </a>
+           </p>
+           <b class="price-item">4900 руб.</b>
+         </li>
+       </ul>
+       <ul class="pagination-list">
+         <li class="pagination-item pagination-item-current"><a>1</a></li>
+         <li class="pagination-item"><a href="#">2</a></li>
+         <li class="pagination-item"><a href="#">3</a></li>
+       </ul>
     </section>
 
    </main>
