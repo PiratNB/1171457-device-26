@@ -10,26 +10,50 @@
          <a class="header-logo" href="index.html"><img src="img/logo-device.svg" alt="DEVICE" width="164" height="36" alt="Логотип интернет-магазина Device"></a>
          <nav class="main-nav">
             <ul class="main-nav__user-list">
-               <li class="main-nav__user-item">
-                  <input class="main-nav__search-input" placeholder="Поиск по сайту">
+              <li class="main-nav__user-item  main-nav__user-item--search">
+                <form class="main-nav__search" method="get" action="https://echo.htmlacademy.ru">
+                  <input class="main-nav__search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
                   <button class="main-nav__search-btn" type="submit">Найти</button>
-               </li>
+                  <label class="main-nav__search-label" for="search">
+                    <span class="visually-hidden">Поиск:</span>
+                  </label>
+                </form>
+              </li>
                <li class="main-nav__user-item">
-                  <a class="main-nav__user-link" href="">Валентин Петухов</a>
-                  <a class="main-nav__user-link" href="">Выйти</a>
+                  <a class="main-nav__user-link" href="#">Валентин Петухов</a>
+                  <a class="main-nav__user-link" href="#">Выйти</a>
                </li>
-               <li class="main-nav__user-item"><a class="main-nav__user-item-href" href="">Сравнить</a></li>
-               <li class="main-nav__user-item"><a class="main-nav__user-item-href" href="">Корзина</a></li>
+               <li class="main-nav__user-item"><a class="main-nav__user-item-href" href="#">Сравнить</a></li>
+               <li class="main-nav__user-item"><a class="main-nav__user-item-href" href="#">Корзина</a></li>
             </ul>
             <ul>
-               <li class="main-nav__item"><a href="dfsdfsdddfdfefs">Каталог товаров</a></li>
-               <li class="main-nav__item"><a href="dfsdfsdfdfefs">Доставка</a></li>
-               <li class="main-nav__item"><a href="dfsdfsdddassfgsd">Гарантия</a></li>
-               <li class="main-nav__item"><a href="dfssssdfsdddassfgsd">Контакты</a></li>
+              <li class="main-nav__item  main-nav__item--catalog">
+                <a class="main-nav__link  main-nav__link--catalog" href="#">Каталог товаров</a>
+                <div class="main-nav__sub-wrap">
+                  <ul class="main-nav__sub-list">
+                    <li class="main-nav__sub-column">
+                      <a href="#">Виртуальная реальность</a>
+                      <a href="catalog.html">Моноподы для селфи</a>
+                      <a href="#">Экшн-камеры</a>
+                    </li>
+                    <li class="main-nav__sub-column">
+                      <a href="#">Фитнес-браслеты</a>
+                      <a href="#">Умные часы</a>
+                    </li>
+                    <li class="main-nav__sub-column">
+                      <a href="#">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+               <li class="main-nav__item"><a href="#">Доставка</a></li>
+               <li class="main-nav__item"><a href="#">Гарантия</a></li>
+               <li class="main-nav__item"><a href="#">Контакты</a></li>
             </ul>
          </nav>
       </header>
       <main>
+        <h2 class="title_page">Моноподы для селфи</h2>
             <ul class="breadcrumbs">
                <li class="breadcrumbs-link"><a href="index.html">Главная</a></li>
                <li class="breadcrumbs-link"><a href="catalog.html">Каталог товаров</a></li>
@@ -38,7 +62,7 @@
          <section class="sidebar">
             <h2 class="visually-hidden">Фильтр товаров</h2>
             <div class="sidebar__title-wrap">
-               <h2>Фильтр:</h2>
+               <h3>Фильтр:</h3>
             </div>
             <fieldset class="filter__item">
                <legend>Стоимость</legend>
@@ -70,10 +94,16 @@
             </fieldset>
             <fieldset class="filter__item">
                <legend>Bluetooth</legend>
-               <ul>
-                  <li>Есть</li>
-                  <li>Нет</li>
-               </ul>
+               <ul class="filter__radio-list">
+                   <li class="filter__radio-item">
+                     <input class="filter__radio-input  visually-hidden" id="filter-control-1" type="radio" name="bluetooth" value="yes" checked>
+                     <label class="filter__radio-label" for="filter-control-1">Есть</label>
+                   </li>
+                   <li class="filter__radio-item">
+                     <input class="filter__radio-input  visually-hidden" id="filter-control-2" type="radio" name="bluetooth" value="no">
+                     <label class="filter__radio-label" for="filter-control-2">Нет</label>
+                   </li>
+                 </ul>
             </fieldset>
             <button class="btn" type="submit">Показать</button>
          </section>
@@ -96,43 +126,68 @@
                </ul>
             </section>
             <section>
+              <!-- Есть еще одна идея, как реализовать этот блок, но пока так -->
                <h2 class="visually-hidden">Список селфи-палок</h2>
                <ul class="catalog-list">
                   <li class="catalog-item">
                      <h3>
-                        <a href="catalog-item.html">Любительская селфи-палка</a>
+                        <a href="#">Любительская селфи-палка</a>
                      </h3>
                      <p class="catalog-item-image">
                         <img src="img/catalog-lsp.jpg" width="360" height="380" alt="Любительская селфи-палка">
                      </p>
                      <b class="price-item">500 руб.</b>
+
+                     <!-- Выпадающие кнопки "В корзину" и "Добавить к сравнению" -->
+                     <div class="dropdown-buttons-content">
+                       <a class="btn" href="#">В корзину</a>
+                       <a class="add-to-compare" href="#">Добавить к сравнению</a>
+                     </div>
                   </li>
                   <li class="catalog-item">
                      <h3>
-                        <a href="catalog-item.html">Профессиональная селфи-палка</a>
+                        <a href="#">Профессиональная селфи-палка</a>
                      </h3>
                      <p class="catalog-item-image">
                         <img src="img/catalog-psp.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                      </p>
                      <b class="price-item">1500 руб.</b>
+
+                     <!-- Выпадающие кнопки "В корзину" и "Добавить к сравнению" -->
+                     <div class="dropdown-buttons-content">
+                       <a class="btn" href="#">В корзину</a>
+                       <a class="add-to-compare" href="#">Добавить к сравнению</a>
+                     </div>
                   </li>
                   <li class="catalog-item">
                      <h3>
-                        <a href="catalog-item.html">Непотопляемая селфи-палка</a>
+                        <a href="#">Непотопляемая селфи-палка</a>
                      </h3>
                      <p class="catalog-item-image">
                         <img src="img/catalog-nsp.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                      </p>
                      <b class="price-item">2500 руб.</b>
+
+                     <!-- Выпадающие кнопки "В корзину" и "Добавить к сравнению" -->
+                     <div class="dropdown-buttons-content">
+                       <a class="btn" href="#">В корзину</a>
+                       <a class="add-to-compare" href="#">Добавить к сравнению</a>
+                     </div>
                   </li>
                   <li class="catalog-item">
                      <h3>
-                        <a href="catalog-item.html">Cелфи-палка "Следуй за мной"</a>
+                        <a href="#">Cелфи-палка "Следуй за мной"</a>
                      </h3>
                      <p class="catalog-item-image">
                         <img src="img/catalog-szmsp.jpg" width="360" height="380" alt="Cелфи-палка "Следуй за мной"">
                      </p>
                      <b class="price-item">4900 руб.</b>
+
+                     <!-- Выпадающие кнопки "В корзину" и "Добавить к сравнению" -->
+                     <div class="dropdown-buttons-content">
+                       <a class="btn" href="#">В корзину</a>
+                       <a class="add-to-compare" href="#">Добавить к сравнению</a>
+                     </div>
                   </li>
                </ul>
                <ul class="pagination-list">
