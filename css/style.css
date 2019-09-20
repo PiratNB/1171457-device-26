@@ -64,6 +64,16 @@ a {
   left: 59px;
 	position: absolute;
 	top: -19px;
+  cursor: pointer;
+}
+.header-logo:hover,.header-logo:focus
+{
+	opacity: .6;
+	transition: all .2s linear;
+}
+.header-logo:active
+{
+	opacity: .3;
 }
 .main-nav
 {
@@ -159,6 +169,8 @@ a {
 	width: 320px;
 }
 
+/* Не могу понять, как оформить кнопку и обводку поиска */
+
 .main-nav_user-link
 {
 	color: #000;
@@ -211,4 +223,138 @@ a {
 	background-image: url(../img/black-cart.svg);
 	bottom: 4px;
 	left: -23px;
+}
+.main-nav_list
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.main-nav_item-catalog
+{
+	position: relative;
+	width: 540px;
+}
+.main-nav_item-delivery
+{
+	width: 140px;
+}
+.main-nav_item-warranty
+{
+	width: 140px;
+}
+.main-nav_item-contacts
+{
+	text-align: right;
+	width: 180px;
+}
+.main-nav_link
+{
+	color: #000;
+	cursor: pointer;
+	font-family: "Gilroy","Arial",sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	letter-spacing: .2em;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+.main-nav_link:hover
+{
+	opacity: .6;
+}
+.main-nav_link:active
+{
+	opacity: .3;
+}
+.main-nav_link-catalog
+{
+	position: relative;
+}
+.main-nav_link-catalog:hover+.main-nav_sub-wrap
+{
+	display: block;
+}
+.main-nav_link-catalog::before
+{
+	background-color: #b8a974;
+	bottom: 10px;
+	content: "";
+	height: 2px;
+	position: absolute;
+	right: -27px;
+	width: 16px;
+}
+.main-nav_link-catalog::after
+{
+	background-color: #b8a974;
+	bottom: 3px;
+	content: "";
+	height: 16px;
+	position: absolute;
+	right: -20px;
+	width: 2px;
+}
+.main-nav_link-contacts
+{
+	margin-right: -.2em;
+}
+.main-nav_sub-wrap
+{
+	background-color: #f7e296;
+	display: none;
+	left: -40px;
+	padding-bottom: 34px;
+	padding-left: 40px;
+	padding-top: 26px;
+	position: absolute;
+	top: 25px;
+	width: 1120px;
+	z-index: 2;
+}
+.main-nav_sub-wrap:hover
+{
+	display: block;
+}
+.main-nav_sub-list
+{
+	display: flex;
+	flex-wrap: wrap;
+	font-family: "Open Sans","Arial",sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	justify-content: space-between;
+	letter-spacing: .01em;
+	line-height: 36px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 640px;
+}
+.main-nav_sub-column
+{
+	display: flex;
+	flex-direction: column;
+	padding-right: 1px;
+	width: 200px;
+}
+.main-nav_sub-column:first-child
+{
+	width: 220px;
+}
+.main-nav_sub-column a
+{
+	color: #000;
+	display: block;
+}
+.main-nav_sub-column a:hover
+{
+	opacity: .6;
+}
+.main-nav_sub-column a:active
+{
+	opacity: .3;
 }
