@@ -21,3 +21,194 @@
 	font-weight: 300;
 	src: url(../fonts/opensanslight.woff) format("woff"),url(../fonts/opensanslight.woff2) format("woff2");
 }
+body
+{
+	background-color: #fff;
+	color: #464646;
+	font-family: "Open Sans","Arial",sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	letter-spacing: .01em;
+	line-height: 30px;
+	margin: 0;
+	min-width: 1200px;
+	overflow-x: hidden;
+	padding: 0;
+	padding-top: 40px;
+}
+a {
+  text-decoration: none;
+}
+.visually-hidden
+{
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.page-header
+{
+	background-color: #f7e296;
+	color: #000;
+	position: relative;
+	margin: 0 auto;
+	padding: 0 20px;
+	width: 1120px;
+}
+.header-logo
+{
+  left: 59px;
+	position: absolute;
+	top: -19px;
+}
+.main-nav
+{
+	padding-bottom: 160px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-top: 28px;
+}
+.main-nav_sub-column
+{
+  list-style: none;
+}
+.main-nav_user-list
+{
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 21px;
+}
+.main-nav_user-item
+{
+	padding-bottom: 15px;
+	padding-left: 27px;
+	padding-top: 15px;
+}
+.main-nav_user-item-search
+{
+	width: 490px;
+}
+.main-nav_user-item-login
+{
+	padding-left: 26px;
+	width: 180px;
+}
+.main-nav_user-item-compare
+{
+	width: 100px;
+  text-align: right;
+}
+.main-nav_user-item-cart
+{
+	text-align: right;
+	width: 90px;
+}
+.main-nav_search
+{
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	width: 440px;
+}
+.main-nav_search-label
+{
+	background-image: url(../img/search.svg);
+	background-repeat: no-repeat;
+	cursor: pointer;
+	height: 20px;
+	left: -24px;
+	position: absolute;
+	top: 8px;
+	width: 20px;
+}
+
+.main-nav_search-label::before
+{
+	background-color: #000;
+	bottom: -12px;
+	content: "";
+	display: none;
+	height: 2px;
+	left: 0;
+	position: absolute;
+	width: 400px;
+}
+.main-nav_search-input
+{
+	background-color: transparent;
+	border: 0;
+	color: #000;
+	cursor: pointer;
+	font-family: "Open Sans","Arial",sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 10px;
+	outline: 0;
+	padding: 0;
+	position: relative;
+	width: 320px;
+}
+
+.main-nav_user-link
+{
+	color: #000;
+	position: relative;
+}
+.main-nav_user-link:hover
+{
+	opacity: .6;
+}
+.main-nav_user-link:hover::before
+{
+	opacity: .6;
+}
+.main-nav_user-link:active
+{
+	opacity: .3;
+}
+.main-nav_user-link:active::before
+{
+	opacity: .3;
+}
+.main-nav_user-link::before
+{
+	background-repeat: no-repeat;
+	content: "";
+	height: 12px;
+	position: absolute;
+	width: 13px;
+}
+.main-nav_user-link-login::before
+{
+	background-image: url(../img/black-user.svg);
+	bottom: 4px;
+	left: -26px;
+}
+.main-nav_user-link-profile::before
+{
+	background-image: url(../img/black-user.svg);
+	bottom: 4px;
+	left: -26px;
+}
+.main-nav_user-link-compare::before
+{
+	background-image: url(../img/black-compare.svg);
+	bottom: 2px;
+	left: -20px;
+}
+.main-nav_user-link-cart::before
+{
+	background-image: url(../img/black-cart.svg);
+	bottom: 4px;
+	left: -23px;
+}
