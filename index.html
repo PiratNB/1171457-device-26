@@ -7,6 +7,7 @@
       <link href="css/style.css" rel="stylesheet">
    </head>
    <body>
+     <div class="container">
       <header class="page-header">
          <h1 class="visually-hidden">Интернет-магазин электронных товаров Device</h1>
          <a class="header-logo" href="index.html"><img src="img/logo-device.svg" alt="DEVICE" width="164" height="36" alt="Логотип интернет-магазина Device"></a>
@@ -63,7 +64,7 @@
             </ul>
          </nav>
       </header>
-
+</div>
       <main class="page-content">
         <div class="container">
          <section class="promo-slider">
@@ -147,7 +148,6 @@
              <span class="visually-hidden">Третий слайд</span>
             </label>
            </div>
-        </div>
          </section>
 
          <section class="main-goods">
@@ -193,8 +193,9 @@
          </section>
         </div>
 
-
+      <div class="container">
          <section class="services-slider">
+
             <!--Сделать переключатели и дополнить остальные разделы-->
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
@@ -202,8 +203,10 @@
             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-         </section>
 
+         </section>
+        </div>
+        <div class="container">
          <section class="main-brands">
             <h2 class="visually-hidden">Популярные бренды</h2>
             <ul class="main-brands__list">
@@ -228,8 +231,9 @@
                   </a>
                </li>
             </ul>
-         </section>
-
+           </section>
+          </div>
+          <div class="container">
          <section class="about-us">
            <h2 class="visually-hidden">Информация о "DEVICE"</h2>
             <h3>О нас</h3>
@@ -248,27 +252,44 @@
             <a href=""><img src="img/google-img.jpg" width="560" height="222" alt="Схема проезда"></a>
             <a class="main-contacts__btn" href="#">Напишите нам</a>
          </section>
+       </div>
       </main>
       <footer class="page-footer">
-         <a><img src="img/logo-device.svg" alt="DEVICE" width="164" height="36"></a>
-         <ul class="page-footer__user-list">
-            <li class="page-footer__user-item"><a href="">Войти</a></li>
-            <li class="page-footer__user-item"><a href="">Сравнить</a></li>
-            <li class="page-footer__user-item"><a href="">Корзина</a></li>
+        <div class="container">
+        <div class="page-footer_user-panel">
+         <a class="page-footer_logo"><img src="img/logo-device.svg" alt="DEVICE" width="164" height="36"></a>
+         <ul class="page-footer_user-list">
+            <li class="page-footer_user-item page-footer_user-item-login">
+              <a class="page-footer_user-link page-footer_user-link-login" href="">Войти</a>
+            </li>
+            <li class="page-footer_user-item page-footer_user-item-compare">
+              <a class="page-footer_user-link page-footer_user-link-compare" href="">Сравнить</a>
+            </li>
+            <li class="page-footer_user-item page-footer_user-item-cart">
+              <a class="page-footer_user-link page-footer_user-link-cart" href="">Корзина</a>
+            </li>
          </ul>
-         <p class="footer__address">г.Москва, ул. Строителей, 15</p>
-         <ul class="page-footer__links">
-            <li class="page-footer__services-link"><a href="dfsdfsdfefs">Доставка</a></li>
-            <li class="page-footer__services-link"><a href="dfsdfsddfgsd">Гарантия</a></li>
-            <li class="page-footer__services-link"><a href="dfsdfsddfапыgsd">Контакты</a></li>
+         <div class="page-footer_info">
+         <p class="footer_address">г.Москва, ул. Строителей, 15</p>
+         <ul class="page-footer_services">
+            <li class="page-footer_services-link page-footer_services-link-delivery"><a href="">Доставка</a></li>
+            <li class="page-footer_services-link page-footer_services-link-warranty"><a href="">Гарантия</a></li>
+            <li class="page-footer_services-link page-footer_services-link-contacts"><a href="">Контакты</a></li>
          </ul>
-         <p class="page-footer__phone"><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
-         <ul>
-            <li class="social-btn"><a href=""><span class="visually-hidden">Facebook</span></a></li>
-            <li class="social-btn"><a href=""><span class="visually-hidden">Instagram</span></a></li>
-            <li class="social-btn"><a href=""><span class="visually-hidden">Twitter</span></a></li>
+         <p class="page-footer_phone"><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
+       </div>
+       <div class="page-footer_links">
+         <div class="page-footer_links-wrap">
+         <ul class="page-footer_social-list">
+            <li class="page-footer_social-item"><a class="page-footer_social-link  page-footer_social-link-fb" href=""><span class="visually-hidden">Facebook</span></a></li>
+            <li class="page-footer_social-item"><a class="page-footer_social-link  page-footer_social-link-inst" href=""><span class="visually-hidden">Instagram</span></a></li>
+            <li class="page-footer_social-item"><a class="page-footer_social-link  page-footer_social-link-tw" href=""><span class="visually-hidden">Twitter</span></a></li>
          </ul>
-         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="HTML Academy" width="27" height="35"></a>
+         <a class="page-footer_copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="HTML Academy" width="27" height="35"></a>
+       </div>
+      </div>
+     </div>
+   </div>
       </footer>
 
 <!-- Всплывающие окна сюда же надо помещать? -->

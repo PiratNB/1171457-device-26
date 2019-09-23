@@ -36,6 +36,24 @@ body
 	padding: 0;
 	padding-top: 40px;
 }
+
+div,section,a,ul,li,p,footer,header
+{
+outline: 1px solid red;
+}
+
+
+.container
+{
+	margin: 0 auto;
+	padding: 0 20px;
+	width: 1200px;
+}
+
+
+
+
+
 a {
   text-decoration: none;
 }
@@ -358,3 +376,267 @@ a {
 {
 	opacity: .3;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.page-footer
+{
+	background-color: #464646;
+	color: #fff;
+	padding-bottom: 57px;
+	padding-top: 63px;
+}
+.page-footer_user-panel
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+	.page-footer_logo
+	{
+		padding-top: 2px;
+	}
+	.page-footer_user-list
+	{
+		display: flex;
+		flex-grow: 1;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+
+
+
+
+
+
+	.page-footer_user-item
+	{
+		text-align: right;
+	}
+	.page-footer_user-item-login
+	{
+		flex-grow: 1;
+		margin-right: 33px;
+	}
+	.page-footer_user-item-compare
+	{
+		margin-right: 22px;
+		width: 100px;
+	}
+	.page-footer_user-item-cart
+	{
+		width: 100px;
+	}
+	.page-footer_logo a
+	{
+		cursor: pointer;
+	}
+	.page-footer_logo a:hover
+	{
+		opacity: .6;
+		transition: all .2s linear;
+	}
+	.page-footer_logo a:active
+	{
+		opacity: .3;
+	}
+	.page-footer_user-link
+	{
+		color: rgba(255,255,255,.7);
+		position: relative;
+		text-align: right;
+	}
+	.page-footer_user-link-logout
+	{
+		color: rgba(255,255,255,.3);
+	}
+	.page-footer_user-link-profile
+	{
+		margin-right: 16px;
+	}
+	.page-footer_user-link-logout:hover
+	{
+		color: #fff;
+	}
+	.page-footer_user-link:hover
+	{
+		color: #fff;
+	}
+	.page-footer_user-link:active
+	{
+		color: rgba(255,255,255,.3);
+	}
+	.page-footer_user-link:hover::before
+	{
+		opacity: .6;
+	}
+	.page-footer_user-link:active::before
+	{
+		opacity: .3;
+	}
+	.page-footer_user-link::before
+	{
+		background-repeat: no-repeat;
+		bottom: 4px;
+		content: "";
+		height: 12px;
+		left: -23px;
+		position: absolute;
+		width: 13px;
+	}
+	.page-footer_address
+	{
+		flex-grow: 7;
+	}
+	.page-footer_phone
+	{
+		flex-grow: 9;
+		text-align: right;
+	}
+	.page-footer_phone a
+	{
+		color: #fff;
+	}
+
+
+
+	.page-footer_user-link-login::before
+	{
+		background-image: url(../img/black-user.svg);
+		left: -26px;
+	}
+	.page-footer_user-link-profile::before
+	{
+		background-image: url(../img/black-user.svg);
+		left: -26px;
+	}
+	.page-footer_user-link-compare::before
+	{
+		background-image: url(../img/black-compare.svg);
+		bottom: 2px;
+		left: -20px;
+	}
+	.page-footer_user-link-cart::before
+	{
+		background-image: url(../img/black-cart.svg);
+	}
+	.page-footer_info
+	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-bottom: 62px;
+		padding-top: 20px;
+	}
+	.page-footer_services
+	{
+		display: flex;
+		flex-grow: 5;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-top: 6px;
+		list-style: none;
+	}
+	.page-footer_services-link a
+	{
+		color: #fff;
+		font-family: "Gilroy","Arial",sans-serif;
+		font-size: 18px;
+		font-weight: 800;
+		letter-spacing: .2em;
+		line-height: 24px;
+		margin: 0 auto;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.page-footer_services a:hover
+	{
+		color: rgba(255,255,255,.6);
+	}
+	.page-footer_services a:active
+	{
+		color: rgba(255,255,255,.3);
+	}
+	.page-footer_social-list
+	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		list-style-type: none;
+		margin: 0;
+		padding-top: 2px;
+		width: 148px;
+	}
+	.page-footer_social-link
+	{
+		height: 32px;
+		opacity: .3;
+		position: relative;
+		width: 32px;
+	}
+	.page-footer_social-link::before
+	{
+		background-repeat: no-repeat;
+		content: "";
+		height: 32px;
+		position: absolute;
+		width: 32px;
+	}
+	.page-footer_social-link-fb::before
+	{
+		background-image: url(../img/facebook.svg);
+	}
+	.page-footer_social-link-inst::before
+	{
+		background-image: url(../img/instagram.svg);
+	}
+	.page-footer_social-link-tw::before
+	{
+		background-image: url(../img/twitter.svg);
+	}
+	.page-footer_social-link:hover,.page-footer_social-link:focus
+	{
+		opacity: .6;
+		transition: all .2s linear;
+	}
+	.page-footer_social-link:active
+	{
+		opacity: .1;
+	}
+	.page-footer_copyright:hover,.page-footer_copyright:focus
+	{
+		opacity: .6;
+		transition: all .2s linear;
+	}
+	.page-footer_copyright:active
+	{
+		opacity: .3;
+	}
+	.page-footer_links
+	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		position: relative;
+	}
+
+	.page-footer_links-wrap
+	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 690px;
+	}
