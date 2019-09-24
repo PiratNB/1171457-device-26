@@ -540,11 +540,12 @@ a {
 		justify-content: space-between;
 		padding-bottom: 62px;
 		padding-top: 20px;
+		width: 100%;
 	}
 	.page-footer_services
 	{
 		display: flex;
-		flex-grow: 5;
+
 		flex-wrap: wrap;
 		justify-content: space-between;
 		padding-top: 6px;
@@ -639,4 +640,8 @@ a {
 		flex-wrap: wrap;
 		justify-content: space-between;
 		width: 690px;
-	}
+}
+
+.footer_address {
+	flex-grow: 7;
+}
