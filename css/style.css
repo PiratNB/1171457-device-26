@@ -1248,23 +1248,24 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding-bottom: 62px;
-	padding-top: 20px;
+	padding-bottom: 42px;
+  padding-top: 5px;
 	margin: 0;
-
 }
 .page-footer_services {
 	display: flex;
 	flex-grow: 5;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding-top: 6px;
+  padding-inline-start: 0;
 	list-style-type: none;
-
+	padding-top: 6px;
+}
+.page-footer_services-link {
+	margin: 0 auto;
 }
 .page-footer_services-link a {
-	margin: 0 auto;
-  font-weight: 800;
+	font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy", "Arial", sans-serif;
