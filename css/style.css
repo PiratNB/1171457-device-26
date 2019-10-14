@@ -1876,28 +1876,19 @@ a {
 .goods-item {
   position: relative;
 }
-.goods-item_new {
-  position: absolute;
-  top: 29px;
-  right: 27px;
-  display: none;
-  box-sizing: border-box;
-  width: 60px;
-  height: 60px;
-  font-weight: 800;
-  font-size: 14px;
-  line-height: 60px;
-  font-family: "Gilroy", "Arial", sans-serif;
-  text-align: center;
-  color: #000000;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  border: 2px solid #000000;
-  border-radius: 50%;
-  opacity: 0.2;
+.new {
+  position: relative;
 }
-.goods-item_new-active {
-  display: block;
+.new::before {
+  content: "";
+  top: 28px;
+  right: 27px;
+  z-index: 3;
+  position: absolute;
+  width: 60px;
+  height: 61px;
+  background-image: url("../img/new.png");
+  background-repeat: no-repeat;
 }
 .goods-item_img {
   position: relative;
