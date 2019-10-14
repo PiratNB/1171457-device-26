@@ -1776,12 +1776,38 @@ a {
   padding: 0;
   list-style-type: none;
 }
+.goods_sort-up,
+.goods_sort-down {
+  position: relative;
+	width: 11px;
+	height: 10px;
+}
+.goods_sort-up a::after {
+	content: "";
+	top: 0;
+	left: 0;
+  position: absolute;
+  width: 11px;
+	height: 10px;
+	background-image: url("../img/sort-up.svg");
+	background-repeat: no-repeat;
+}
+.goods_sort-down a::after {
+  content: "";
+	top: 0;
+	left: 0;
+  position: absolute;
+  width: 11px;
+	height: 10px;
+	background-image: url("../img/sort-down.svg");
+	background-repeat: no-repeat;
+}
 .goods_sort-up-link {
-  opacity: 0.2;
+  opacity: 0.5;
 }
 .goods_sort-up-link:hover,
 .goods_sort-down-link:hover {
-  opacity: 0.4;
+  opacity: 0.8;
 }
 .goods_sort-up-link:active,
 .goods_sort-down-link:active {
