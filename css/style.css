@@ -604,10 +604,14 @@ a {
 	top: 2px;
 	width: 6px;
 }
-.promo-slider_input:focus~.promo-slider_controls label
-{
-	outline: 1px dotted #212121;
-	outline: 5px auto -webkit-focus-ring-color;
+.promo-slider_input:focus~.promo-slider_controls1 label {
+  outline: 5px auto -webkit-focus-ring-color;
+}
+.promo-slider_input:focus~.promo-slider_controls2 label {
+  outline: 5px auto -webkit-focus-ring-color;
+}
+.promo-slider_input:focus~.promo-slider_controls3 label {
+  outline: 5px auto -webkit-focus-ring-color;
 }
 .promo-slider_input[id=promo-control-1]:checked~.promo-slider_controls label[for=promo-control-1]::before,.promo-slider_input[id=promo-control-2]:checked~.promo-slider_controls label[for=promo-control-2]::before,.promo-slider_input[id=promo-control-3]:checked~.promo-slider_controls label[for=promo-control-3]::before {
 	display: block;
@@ -2171,6 +2175,7 @@ a {
 .popup-write-us input:focus {
   background-color: #ffffff;
   border: 3px solid rgba(240, 197, 46, 0.5);
+	padding-left: 16px;
 }
 .popup-write-us input:invalid {
   background-color: rgba(237, 181, 181, 1.0);
@@ -2208,6 +2213,8 @@ a {
 .popup-write-us textarea:focus {
   background-color: #ffffff;
   border: 3px solid rgba(240, 197, 46, 0.5);
+	padding-left: 16px;
+	padding-top: 11px;
 }
 .popup-write-us textarea::-webkit-input-placeholder {
   font-weight: 400;
