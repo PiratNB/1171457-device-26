@@ -31,11 +31,6 @@ body {
 	padding: 0;
 	padding-top: 40px;
 }
-div,section,a,ul,li,p,footer,header,tr,td,table {
-outline: 1px solid red;
-}
-
-
 .container
 {
 	margin: 0 auto;
@@ -87,15 +82,9 @@ outline: 1px solid red;
 	top: 0;
 	transition: all .3s linear;
 }
-
-
-
-
-
-
 html {
 	box-sizing: border-box;
-	overflow-x: hidden;
+  overflow-x: hidden;
 }
 *,::before,::after {
 	box-sizing: inherit;
@@ -343,7 +332,7 @@ a {
 .main-nav_user-link-logout:hover {
 	color: rgba(0,0,0,.6);
 }
-.main-nav__user-link--logout:active {
+.main-nav_user-link-logout:active {
 	color: rgba(0,0,0,.1);
 }
 .main-nav_list {
@@ -386,8 +375,11 @@ a {
 }
 .main-nav_link-catalog {
 	position: relative;
-}
+	}
 .main-nav_link-catalog:hover+.main-nav_sub-wrap {
+	display: block;
+}
+.main-nav_link-catalog:focus-within+.main-nav_sub-wrap {
 	display: block;
 }
 .main-nav_link-catalog::before {
@@ -886,7 +878,6 @@ a {
 	transition: all .3s linear;
 }
 .services-slider_input:focus~.services-slider_controls label {
-	outline: 1px dotted #212121;
 	outline: 5px auto -webkit-focus-ring-color;
 }
 .services-slider_input[id=services-control-1]:checked~.services-slider_controls label[for=services-control-1],.services-slider_input[id=services-control-2]:checked~.services-slider_controls label[for=services-control-2],.services-slider_input[id=services-control-3]:checked~.services-slider_controls label[for=services-control-3] {
@@ -1611,12 +1602,10 @@ a {
 	opacity: .25;
 }
 .filter_checkbox-input:focus+.filter_checkbox-label {
-	outline: 1px dotted #212121;
 	outline: 5px auto -webkit-focus-ring-color;
 }
 .filter_radio-input:focus+.filter_radio-label {
-	outline: 1px dotted #212121;
-	outline: 5px auto -webkit-focus-ring-color;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 .filter_checkbox-label::before {
 	background-image: url(../img/checkbox-off.svg);
