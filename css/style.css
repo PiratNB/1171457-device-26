@@ -326,14 +326,7 @@ a {
 	left: -23px;
 }
 .main-nav_user-link-logout {
-	color: rgba(0,0,0,.3);
 	margin-left: 15px;
-}
-.main-nav_user-link-logout:hover {
-	color: rgba(0,0,0,.6);
-}
-.main-nav_user-link-logout:active {
-	color: rgba(0,0,0,.1);
 }
 .main-nav_list {
 	display: flex;
