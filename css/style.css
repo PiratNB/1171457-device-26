@@ -204,7 +204,7 @@ a {
 	width: 320px;
 }
 
-/* Не могу понять, как оформить кнопку и обводку поиска.====> Попробовал вот так, правильно? Или можно проще?.. */
+
 .main-nav_search-input::-webkit-input-placeholder {
 	color: rgba(0,0,0,.3);
 }
@@ -470,7 +470,7 @@ a {
 	padding-bottom: 85px;
 }
 .promo-slider_item-3 {
-	padding-bottom: 110px;
+	padding-bottom: 11px;
 }
 .promo-slider_img-wrap {
 	margin-right: 40px;
@@ -663,7 +663,6 @@ a {
 }
 
 /* Популярные товары */
-
 .main-goods {
 	padding-bottom: 18px;
 }
@@ -723,7 +722,7 @@ a {
 	background-color: #f0c52e;
 	transition: all .2s linear;
 }
-.main-goods_item-link:active .main-goods_item-img,.main-goods_item-link:active .main-goods_item-name {
+.main-goods_item:active {
 	opacity: .3;
 }
 .main-goods_item-name {
@@ -948,14 +947,6 @@ a {
 	font-weight: 800;
 	line-height: 48px;
 }
-
-
-
-
-
-
-
-
 
 
 /* Популярные бренды */
@@ -1343,7 +1334,6 @@ a {
 
 
 /* Внутренняя страница второй хедер с крошками*/
-
 .page-content_header {
 	padding-bottom: 44px;
 	padding-left: 59px;
