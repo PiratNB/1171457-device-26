@@ -1679,6 +1679,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+	justify-content: space-between;
   width: 832px;
   padding-top: 18px;
   padding-bottom: 18px;
@@ -1708,10 +1709,9 @@ a {
 .goods_sort-list {
   display: flex;
   flex-wrap: wrap;
-  width: 519px;
   margin: 0;
   padding: 0;
-  padding-right: 18px;
+  padding-right: 200px;
   padding-bottom: 4px;
   list-style-type: none;
 }
